@@ -51,7 +51,11 @@ class HomeController extends Controller
             $nombreUser=User::count();
             $nombreRef=ProductReference::count();
             $nombreTypeProd=ProductType::count();
-            return view('admin.home', compact('productsCount','adminDetail','nombreRef','nombreTypeProd','nombreUser'));
+            $types = UserType::limit(4)->get();
+            $tab = (array_key_exists($request->query('tab'), $types))?
+                htmlspecialchars($request->query('tab')) :
+                'trader';
+            return view('admin.home', compact('data','tab','types','productsCount','adminDetail','nombreRef','nombreTypeProd','nombreUser'));
         }
         return view('user.home', compact('data', 'tab', 'types'));
     }

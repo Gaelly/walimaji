@@ -1,6 +1,6 @@
 @extends('layouts.app')
-
 @section('content')
+
     <div class="content-wrapper">
         <!-- Main content -->
         <section class="content">
@@ -27,7 +27,7 @@
                                 <!-- Map box -->
                                 <div class="box box-solid bg-light-blue-gradient">
                                     <div class="box-body">
-                                        <div id="world-map" style="height: 450px;"></div>
+                                        <div class="map-container-content" id="mapid" style="height: 450px;"></div>
                                     </div>
                                     <!-- /.box-body-->
                                 </div>
@@ -165,4 +165,7 @@
         </section>
         <!-- /.content -->
     </div>
+
+    <script src="{{ asset("assets/js/map.js") }}"></script>
+
 @endsection

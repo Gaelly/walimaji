@@ -1,3 +1,5 @@
+@extends('layouts.mapAdmin')
+
 @extends('layouts.app-admin')
 
 @section('content')
@@ -88,6 +90,7 @@
                 </div>
                 <!-- ./col -->
             </div>
+
             <div class="row">
                 <div class="col-lg-12 box-primary  ">
                     <div class="nav-tabs-custom">
@@ -110,7 +113,9 @@
                                 <!-- Map box -->
                                 <div class="box box-solid bg-light-blue-gradient">
                                     <div class="box-body">
-                                        <div id="world-map" style="height: 450px;"></div>
+                                        <div class="map-container">
+                                            <div class="map-container-content" id="mapadmin" style="height: 450px;"></div>
+                                        </div>
                                     </div>
                                     <!-- /.box-body-->
                                 </div>
@@ -121,7 +126,9 @@
                                 <!-- Map box -->
                                 <div class="box box-solid bg-light-blue-gradient">
                                     <div class="box-body">
-                                        <div id="world-map" style="height: 450px;"></div>
+                                        <div class="map-container">
+                                            <div class="map-container-content" id="mapadmin" style="height: 450px;"></div>
+                                        </div>
                                     </div>
                                     <!-- /.box-body-->
                                 </div>
@@ -133,7 +140,9 @@
                                 <!-- Map box -->
                                 <div class="box box-solid bg-light-blue-gradient">
                                     <div class="box-body">
-                                        <div id="world-map" style="height: 450px;"></div>
+                                        <div class="map-container">
+                                            <div class="map-container-content" id="mapadmin" style="height: 450px;"></div>
+                                        </div>
                                     </div>
                                     <!-- /.box-body-->
                                 </div>
@@ -145,7 +154,9 @@
                                 <!-- Map box -->
                                 <div class="box box-solid bg-light-blue-gradient">
                                     <div class="box-body">
-                                        <div id="world-map" style="height: 450px;"></div>
+                                        <div class="map-container">
+                                            <div class="map-container-content" id="mapadmin" style="height: 450px;"></div>
+                                        </div>
                                     </div>
                                     <!-- /.box-body-->
                                 </div>

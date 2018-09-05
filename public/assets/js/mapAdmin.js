@@ -71,17 +71,18 @@ function showSinglePosition(data) {
         let userLat = data.latitude;
         let userLng = data.longitude;
 
-        let map = L.map('map-single').setView([userLat, userLng], 18);
+
+        let map = L.map('mapadmin').setView([userLat, userLng], 18);
         L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic2FteW13YW1iYSIsImEiOiJjamtnd2FlbDE1M2l5M3dtbGY1Z2wzbzJjIn0.7dqO-EqSJpSyxyUniLkUNQ', {
             maxZoom: 18,
             attribution: `Map data &copy; <a href="http://openstreetmap.org/"> OpenStreetMap </a> contributors, <a href="http://creativecommons.org/"> CC-BY-SA </a>, Imagery © <a href="http://mapbox.com">Mapbox</a>`,
             id: 'map-single'
-        }).addTo(map);
+        }).addTo(mapadmin);
 
 
         let marker = L.marker(
             [userLat, userLng],
-        ).addTo(map);
+        ).addTo(mapadmin);
 
         marker.bindPopup(
             `<div class="container"><p>${data['name']}</p>
@@ -108,13 +109,13 @@ function showPosition(position) {
     let userLng = position.coords.longitude;
 
     console.log(userLat, userLng);
-    let map = L.map('map').setView([userLat, userLng], 12);
+    let map = L.map('mapadmin').setView([userLat, userLng], 12);
 
 
     L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic2FteW13YW1iYSIsImEiOiJjamtnd2FlbDE1M2l5M3dtbGY1Z2wzbzJjIn0.7dqO-EqSJpSyxyUniLkUNQ', {
         maxZoom: 18,
         attribution: `Map data &copy; <a href="http://openstreetmap.org/"> OpenStreetMap </a> contributors, <a href="http://creativecommons.org/"> CC-BY-SA </a>, Imagery © <a href="http://mapbox.com">Mapbox</a>`,
-        id: 'map'
+        id: 'mapadmin'
     }).addTo(map);
 
     let markersLayer = new L.LayerGroup();	//layer contain searched elements
