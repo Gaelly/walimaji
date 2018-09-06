@@ -38,7 +38,11 @@
     @endif
 
 
-    <div class="nav-tabs-custom map-nav-tabs">
+   <div class = "row" style="background-color: white" >
+   <div class = "col-lg-4">
+   </div>
+    <div class = "col-lg-4" >
+        <div class ="nav-tabs-custom map-nav-tabs nav pull-left" style="-webkit-box-shadow:none;"  >
         <ul class="nav nav-tabs ">
             @foreach($types as $type)
                 @if($tab == $type->designation)
@@ -49,7 +53,10 @@
             @endforeach
         </ul>
     </div>
-
+    </div>
+    <div class = "col-lg-2">
+    </div>
+   </div>
     @yield('content')
 
     @include('includes.default-footer')
