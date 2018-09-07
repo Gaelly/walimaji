@@ -41,7 +41,7 @@
    <div class = "row" style="background-color: white" >
    <div class = "col-lg-4">
    </div>
-    <div class = "col-lg-4" >
+    <div class = "col-lg-5" >
         <div class ="nav-tabs-custom map-nav-tabs nav pull-left" style="-webkit-box-shadow:none;"  >
         <ul class="nav nav-tabs ">
             @foreach($types as $type)
