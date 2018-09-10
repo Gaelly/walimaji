@@ -1,12 +1,12 @@
 <header class="main-header">
     <nav class="navbar navbar-static-top">
         <div class="container">
-            <div class="row">
-                <div class ="col-lg-1" >
+            <div class="row"> 
+                <div class ="col-sm-1" >
                 </div>
-                <div class = "col-lg-9" >
+                <div class = "col-sm-10" >
                     <div class= "row">
-                        <div class = "col-sm-5">
+                        <div class = "col-sm-6">
                             <div class="navbar-header">
                                 <a href="{{ url('/') }}" class="navbar-brand"><b>{{ config("APP_NAME", "Walimaji") }}</b></a>
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -23,11 +23,11 @@
                                 </form>
                             </div>
                         </div>
-                        <div class = "col-sm-5" >
-                        </div>
-                        <div class = "col-sm-2">
-                            <div class ="collapse navbar-collapse pull-right" id = "navbar-collapse identification" >
-                                <ul class = "nav navbar-nav" >
+                        <div class = "col-sm-3" >
+                        </div> 
+                        <div class = "col-sm-3">
+                            <div class ="collapse navbar-collapse pull-right" id="navbar-collapse identification">
+                                <ul class = "nav navbar-right" >
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">S'identifier <span class="caret"></span></a>
                                         <ul class="dropdown-menu" role="menu">
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                 </div>
-                <div class= "col-lg-1">
+                <div class= "col-sm-1">
                 </div>
             </div>
         </div>
