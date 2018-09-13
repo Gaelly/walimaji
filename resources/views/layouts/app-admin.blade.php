@@ -40,11 +40,7 @@
     <script src="{{ asset("assets/dist/js/demo.js") }}"></script>
     <script src="{{asset("assets/leaflet/dist/leaflet-search.js")}}"></script>
 
-    <script>
-
-        var mapData = JSON.parse('{!! $data !!}');
-        console.log(mapData[0]['name']);
-    </script>
+   
     <script src="{{ asset("assets/js/map.js") }}"></script>
 
 </body>
